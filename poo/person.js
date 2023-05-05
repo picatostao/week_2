@@ -1,5 +1,5 @@
-class persons{
-    constructor(name, surname, year, kg,cm)
+class Persons{
+    constructor(name, surname, year, kg,cm, aficciones )
     {
         this.nombre=name;
         this.apellido=surname;
@@ -8,23 +8,24 @@ class persons{
         this.altura= cm;
         this.imc=this.calcImc();
         this.edad=this.calcedad(2023);
-        this.hobbies=["geologia","acupuntura","tiro con arco"];
+        this.hobbies=aficciones;
     }
     calcImc(){                
         return this.peso/(this.altura*this.altura);
     }
-    calcedad(){
+    calcedad(currentyear){
         return currentyear - this.anyoNacimiento ;   
     }
     printAll(){
         return `${this.nombre}${"-"}${this.apellidos}${"-"}${this.anyoNacimiento}${"-"}${this.peso}${"-"}`
     }
     printHobbies(){
-        return this.hobbies.length
+        return this.hobbies
     }
 }
-module.exports={person
+module.exports={Persons
 }
-let currentyear=2023
-let andres=new person("Andres","perez",1995,100,180,2023)
+
+
+let andres=new Persons("Andres","perez",1995,100,180,["esgrima","acupuntura","dialogar"])
 console.log(andres)
