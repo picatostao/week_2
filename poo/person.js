@@ -1,4 +1,4 @@
-class person{
+class persons{
     constructor(name, surname, year, kg,cm)
     {
         this.nombre=name;
@@ -25,3 +25,6 @@ class person{
 }
 module.exports={person
 }
+let currentyear=2023
+let andres=new person("Andres","perez",1995,100,180,2023)
+console.log(andres)
