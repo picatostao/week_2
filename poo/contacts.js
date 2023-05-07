@@ -1,6 +1,6 @@
 let myLib= require("./person")
 
-class Contact{
+class Contacts{
     constructor(){
         this.ArrayPerson=[]
     }
@@ -8,6 +8,6 @@ class Contact{
         return this.ArrayPerson
     }
 }
-module.exports=Contact
-let contacto=new Contact()
+module.exports={Contacts}
+
 
