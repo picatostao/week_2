@@ -9,8 +9,8 @@ export class Person{
     public yearOfBirth(currentYear:number):number{
         return currentYear-this.age
     }
-    public setAddress(adress:string):any{
-        return this.adress
+    public setAddress(newadress:string):void{
+        this.adress=newadress
     }
     public getAdress():string{
         return this.adress

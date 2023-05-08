@@ -11,11 +11,11 @@ export class Library{
     public getManager(){
         return this.manager
     }
-    public setAdress(adress:string):void{
-        this.adress
+    public setAdress(newadress:string):void{
+        this.adress=newadress
     }
-    public setManager(manager:string):void{
-
+    public setManager(newmanager:string):void{
+        this.manager=newmanager
     }
     public toString():string{
         let libreria = ""
