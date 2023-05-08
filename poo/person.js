@@ -16,17 +16,17 @@ class Persons{
         return currentyear - this.anyoNacimiento;   
     }
     printAll(){
-        return `nombre - ${this.nombre}
+        console.log(`nombre - ${this.nombre}
         apellido - ${this.apellido}
         año nacimiento - ${this.anyoNacimiento}
         peso - ${this.peso}
         altura - ${this.altura}
         imc- ${this.imc}
         edad - ${this.edad}
-        aficciones - ${this.hobbies}`;
+        aficciones - ${this.hobbies}`);
     }
     printHobbies(){
-        return this.hobbies
+        console.log(this.hobbies)
     }
 }
 module.exports={Persons}

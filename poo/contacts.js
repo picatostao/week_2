@@ -5,7 +5,7 @@ class Contacts{
         this.ArrayPerson=[]
     }
     printPersons(){
-        return this.ArrayPerson
+        console.log(this.ArrayPerson)
     }
 }
 module.exports={Contacts}

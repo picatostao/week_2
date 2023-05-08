@@ -8,11 +8,11 @@ export class Vector{
         }
     }
     public print(){
-        return this.elements
+        console.log(this.elements)
             }    
             
      
-    public add(v1:Vector){
+    public add(v1:Vector):Vector{
         let result= new Vector(this.elements.length,0)
         for(let i=0; i<this.elements.length;i++){
             result.elements[i]=this.elements[i]+v1.elements[i]
@@ -22,7 +22,7 @@ export class Vector{
             
 
 
-    public subs(v1:Vector){
+    public subs(v1:Vector):Vector{
         let result= new Vector(this.elements.length,0)
         for(let i=0; i<this.elements.length;i++){
             result.elements[i]=this.elements[i]-v1.elements[i]
@@ -31,7 +31,7 @@ export class Vector{
     }
 
 
-    public muly(v1:Vector){
+    public muly(v1:Vector):Vector{
         let result= new Vector(this.elements.length,0)
         for(let i=0; i<this.elements.length;i++){
             result.elements[i]=this.elements[i]*v1.elements[i]
