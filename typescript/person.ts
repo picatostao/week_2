@@ -4,12 +4,12 @@ export class Person{
         
     }
     public printName():string{
-        return this.name
+            return (this.name)
     }
     public yearOfBirth(currentYear:number):number{
         return currentYear-this.age
     }
-    public setAddress(newadress:string):void{  /////
+    public setAddress(newadress:string):void{
         this.adress=newadress
     }
     public getAdress():string{
